@@ -37,5 +37,6 @@ def new_user():
         client.send("\nmessage from SERVER: ok connection\n\n".encode())
         threading.Thread(target=await_message, args=(client,)).start()
 
-print("server start")
-new_user()
+if __name__ == "__main__":
+    print("server start")
+    new_user()
