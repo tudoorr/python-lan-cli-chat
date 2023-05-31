@@ -29,5 +29,6 @@ def listen():
             client.shutdown(socket.SHUT_RDWR)
             exit()
 
-threading.Thread(target=listen).start()
-threading.Thread(target=send).start()
+if __name__ == "__main__":
+    threading.Thread(target=listen).start()
+    threading.Thread(target=send).start()
