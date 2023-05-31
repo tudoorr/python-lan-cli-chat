@@ -18,7 +18,9 @@ client.send(username.encode())
 
 def send():
     while True:
-        client.send(input("").encode())
+        message = input("")
+        if len(message) != 0 and len(message) < 450:
+        client.send(message.encode())
 
 def listen():
     while True:
