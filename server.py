@@ -1,7 +1,7 @@
 import socket, threading
 
-host = "127.0.0.1"
-port = 6969
+host = "IP_HERE"
+port = PORT_HERE
 client_user_info = {}
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
