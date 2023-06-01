@@ -20,7 +20,7 @@ def send():
     while True:
         message = input("")
         if len(message) != 0 and len(message) < 450:
-        client.send(message.encode())
+            client.send(message.encode())
 
 def listen():
     while True:
